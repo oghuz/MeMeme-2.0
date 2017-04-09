@@ -21,7 +21,6 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var topTextFieldOutlet: UITextField! {
         didSet {
             topTextFieldOutlet.delegate = self
-
         }
     }
     @IBOutlet weak var buttomTextFieldOutlet: UITextField! {
