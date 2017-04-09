@@ -21,11 +21,13 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var topTextFieldOutlet: UITextField! {
         didSet {
             topTextFieldOutlet.delegate = self
+            self.configuerTextfields(textField: buttomTextFieldOutlet, enale: false)
         }
     }
     @IBOutlet weak var buttomTextFieldOutlet: UITextField! {
         didSet {
             buttomTextFieldOutlet.delegate = self
+            self.configuerTextfields(textField: topTextFieldOutlet, enale: false)
         }
     }
         
@@ -53,9 +55,7 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.configuerTextfields(textField: buttomTextFieldOutlet, enale: false)
-        self.configuerTextfields(textField: topTextFieldOutlet, enale: false)
-    }
+                    }
     
     //#MARK: configure text fields
     func configuerTextfields(textField:UITextField, enale:Bool?){
