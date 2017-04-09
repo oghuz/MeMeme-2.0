@@ -18,18 +18,21 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
     // outlets and initializing
     
     @IBOutlet weak var imageViewOutlet: UIImageView!
-    @IBOutlet weak var topTextFieldOutlet: UITextField!
-    @IBOutlet weak var buttomTextFieldOutlet: UITextField!
+    @IBOutlet weak var topTextFieldOutlet: UITextField! {
+        didSet {
+            topTextFieldOutlet.delegate = self
+
+        }
+    }
+    @IBOutlet weak var buttomTextFieldOutlet: UITextField! {
+        didSet {
+            buttomTextFieldOutlet.delegate = self
+        }
+    }
         
     @IBOutlet weak var toolBarOutLet: UIToolbar!
     @IBOutlet weak var cemeraButtonOutlet: UIBarButtonItem!
     
-    func initializeTheOutlets(){
-    
-        topTextFieldOutlet.delegate = self
-        buttomTextFieldOutlet.delegate = self
-        
-    }
  
     // creating text field atributes
    let textFieldAtributes = [    
@@ -50,9 +53,6 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.initializeTheOutlets()
-        
         
         self.configuerTextfields(textField: buttomTextFieldOutlet, enale: false)
         self.configuerTextfields(textField: topTextFieldOutlet, enale: false)
@@ -88,7 +88,7 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         
-        self.unsunscribeFromKeyboardWillShowNotification()
+        self.unsubscribeFromKeyboardWillShowNotification()
         self.unsubscribeFromKeyBoardWillHideNotification()
         
     }
@@ -218,7 +218,7 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     // unsubscribe from keyboard show notification
-    func unsunscribeFromKeyboardWillShowNotification(){
+    func unsubscribeFromKeyboardWillShowNotification(){
     
         NotificationCenter.default.removeObserver(self, name: Notification.Name.UIKeyboardWillShow, object: nil)
            }
@@ -230,10 +230,7 @@ class MemeMeEditorViewController: UIViewController, UIImagePickerControllerDeleg
                view.frame.origin.y -= theKeyBoardHeight(notification: notification)
         }
         
-        
     }
-    
-    
     
      // # MARK: moving down the view when keyborad hide
     
