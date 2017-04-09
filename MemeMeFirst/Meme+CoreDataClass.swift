@@ -11,5 +11,13 @@ import CoreData
 
 
 public class Meme: NSManagedObject {
+    convenience init(_ entity: String, inContext context: NSManagedObjectContext) {
+        if let ent = NSEntityDescription.entity(forEntityName: entity, in: context) {
+            self.init(entity: ent, insertInto: context)
+        }
+        else {
+            fatalError("can not initialize the Meme entity")
+        }
+    }
 
 }
