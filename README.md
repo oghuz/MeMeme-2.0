@@ -1,8 +1,8 @@
 # MeMeme-2.0
-iOS app that let user choose photo from gallery or take one with camera and add memes on top and bottom, 
-share it with family and friends.
-in next version core data will be added for storing memes
-# Tool ang Language
-  `Swift 3`  `Xcode 8`
-# install
+## Discription
+Built an app that takes pictures and overlays text to make memes out of friends, family, or pets. Also allows sharing with others via social media or email, and viewing past memes in a table or collection view.
+
+## Tool and Language
+  `Swift 3`  `Xcode 8` `UIKit` `presenting view controllers` `tables` `collections` `tabs` `navigation`
+## install
 **`download`** or **`clone`** project and run it in **Xcode**
