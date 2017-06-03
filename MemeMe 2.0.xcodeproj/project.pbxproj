@@ -10,6 +10,7 @@
 		D616D1AE1DFE036300426BAA /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616D1AD1DFE036300426BAA /* tableViewController.swift */; };
 		D616D1B01DFE038000426BAA /* collectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616D1AF1DFE038000426BAA /* collectionViewController.swift */; };
 		D616D1C61DFF93E400426BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D616D1C41DFF93E400426BAA /* Main.storyboard */; };
+		D644710C1EE3193A00B9354C /* IBDesgnables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D644710B1EE3193A00B9354C /* IBDesgnables.swift */; };
 		D64655FD1E0459E100EF8F03 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64655FC1E0459E100EF8F03 /* detailViewController.swift */; };
 		D64AAAD11DB9549F0025C480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64AAAD01DB9549F0025C480 /* AppDelegate.swift */; };
 		D64AAAD31DB9549F0025C480 /* MemeMeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64AAAD21DB9549F0025C480 /* MemeMeEditorViewController.swift */; };
@@ -46,6 +47,7 @@
 		D616D1AD1DFE036300426BAA /* tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		D616D1AF1DFE038000426BAA /* collectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionViewController.swift; sourceTree = "<group>"; };
 		D616D1C51DFF93E400426BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D644710B1EE3193A00B9354C /* IBDesgnables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesgnables.swift; sourceTree = "<group>"; };
 		D64655FC1E0459E100EF8F03 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		D64AAACD1DB9549F0025C480 /* MemeMe 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemeMe 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64AAAD01DB9549F0025C480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D644710A1EE3191C00B9354C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D644710B1EE3193A00B9354C /* IBDesgnables.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		D64AAAC41DB9549F0025C480 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		D64AAACF1DB9549F0025C480 /* MemeMeFirst */ = {
 			isa = PBXGroup;
 			children = (
+				D644710A1EE3191C00B9354C /* Utilities */,
 				D6B4BBF61E9AA9FE00FF5998 /* DataModel */,
 				D64AAAD01DB9549F0025C480 /* AppDelegate.swift */,
 				D65585151DF72A5800363627 /* MeMe.swift */,
@@ -301,6 +312,7 @@
 				D64AAAD31DB9549F0025C480 /* MemeMeEditorViewController.swift in Sources */,
 				D64655FD1E0459E100EF8F03 /* detailViewController.swift in Sources */,
 				D64AAAD11DB9549F0025C480 /* AppDelegate.swift in Sources */,
+				D644710C1EE3193A00B9354C /* IBDesgnables.swift in Sources */,
 				D6EA8E9B1E03521D001CE809 /* tableViewCell.swift in Sources */,
 				D616D1B01DFE038000426BAA /* collectionViewController.swift in Sources */,
 				D6EA8E9D1E035245001CE809 /* collectionViewCell.swift in Sources */,
