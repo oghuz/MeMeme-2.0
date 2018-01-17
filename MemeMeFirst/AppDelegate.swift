@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         saveContext()
         
-        unRegisterNSManagedObjectContextdidChangeNotification()
+        //unRegisterNSManagedObjectContextdidChangeNotification()
         //unRegisterNSManagedObjectContextdidFinishSaveNotification()
         
     }
